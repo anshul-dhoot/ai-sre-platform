@@ -34,3 +34,5 @@ docker-data/
 # Temporary
 tmp/
 temp/
+
+.m2/
