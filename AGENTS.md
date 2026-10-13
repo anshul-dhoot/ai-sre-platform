@@ -45,3 +45,30 @@ Every major component should have a clear purpose and a reason it is needed at t
 The human developer reviews and approves changes before they are committed.
 
 AI-generated code must be treated as a proposal until reviewed and validated.
+
+## Design for simplicity
+- Prefer the simplest design that meets the requirements.
+- Challenge repeated code, excessive conditionals, unnecessary abstractions, and duplicated logic.
+- Consider standard Java and Spring capabilities before introducing a new dependency.
+- Do not add dependencies merely to make code shorter.
+
+
+## Explain code changes
+- Explain the purpose of every new class and important configuration file.
+- Explain the end-to-end execution flow.
+- Explain significant framework defaults and which settings have been explicitly configured.
+- Explain important alternatives considered and why the chosen approach fits the current scope.
+
+
+## Review before completing work
+- Inspect existing conventions before coding.
+- Review generated code for correctness, readability, maintainability, concurrency and failure behavior.
+- Run relevant tests and report actual results.
+- Identify assumptions, unverified behavior and deferred improvements.
+
+
+## Control scope
+- Do not implement optional improvements just because they are possible.
+- Do not introduce infrastructure or dependencies without explaining the benefit and trade-off.
+- Stop and ask when a significant design choice is ambiguous.
+- Preserve human approval before commits and significant architectural changes.
